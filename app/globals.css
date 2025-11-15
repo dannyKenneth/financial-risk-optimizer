@@ -3,6 +3,14 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-black-500: #1F2327;
+  --color-black-400: #23272F;
+  --color-black-300: #2A2E37;
+  --color-black-200: #30343C;
+  --color-black-100: #374151;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -45,7 +53,7 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: #0E1116;
   --foreground: oklch(0.147 0.004 49.25);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.147 0.004 49.25);
@@ -118,5 +126,8 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
 }
